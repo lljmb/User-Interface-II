@@ -156,24 +156,21 @@ a:active { color: #000000; text-decoration: none}
 
 /* 800px view */ 
 @media (max-width:800px){
+  
 .maincontainer{
     align-items: center;
     justify-content: center;
+    width: 65%;
   }
 
   .othercontainer{
     flex-flow: column;
-    width: 80%;
-    height: 75%;
+    height: 80%;
     padding-bottom: 2%;
   }
 
   .othercontainer .content {
     padding: 5%;
-  }
-
-  .header-container{
-    max-width: 95%;
   }
 
   .container2 {
@@ -202,6 +199,7 @@ a:active { color: #000000; text-decoration: none}
     margin: auto;
     align-items: center;
     justify-content: center;
+    width: 55%;
   }
 
 .content {
@@ -210,8 +208,6 @@ a:active { color: #000000; text-decoration: none}
 
 footer {
   background-color: skyblue;
-  width: 95%;
-  padding-left: 5%;
 }
 
 footer .container2 {
