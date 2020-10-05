@@ -11,6 +11,7 @@ html{
   font-size: 62.5%;
   font-size: 14px;
   background: lightblue;
+  max-width: 100%; /* stops horizontal scrollbar */
 }
 
 h1{
@@ -22,7 +23,7 @@ h1{
 
 .container {
   margin: 0 auto;
-  width: 80%;
+  max-width: 100%;
 }
 
 .header-container {
@@ -141,7 +142,6 @@ button:hover{
 
 img {
     display: flex;
-    margin: 0 auto;
 height: 250px;
 width: 300px;
 border-radius: 150px;
@@ -153,3 +153,73 @@ a:link { display: flex; flex-flow: wrap; color: #000000; text-decoration: none; 
 a:visited { color: #000000; text-decoration: none}
 a:hover { color: #3366CC; text-decoration: underline}
 a:active { color: #000000; text-decoration: none}
+
+/* 800px view */ 
+@media (max-width:800px){
+.maincontainer{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .othercontainer{
+    flex-flow: column;
+    width: 80%;
+    height: 75%;
+    padding-bottom: 2%;
+  }
+
+  .othercontainer .content {
+    padding: 5%;
+  }
+
+  .header-container{
+    max-width: 95%;
+  }
+
+  .container2 {
+    justify-content: flex-end;
+  }
+
+}
+
+/* 500px view */
+@media (max-width: 500px){
+
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+  flex-flow: column;
+  align-items: center;
+  line-height: 0;
+}
+
+  .maincontainer {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+.container {
+  margin: 0;
+}
+
+.content {
+  width: 35%;
+  flex-direction: row wrap;
+}
+
+footer .container2 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+}
