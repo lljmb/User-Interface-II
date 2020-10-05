@@ -193,6 +193,7 @@ a:active { color: #000000; text-decoration: none}
 
 .container2 {
   flex-flow: column;
+  justify-content: center;
   align-items: center;
   line-height: 0;
 }
@@ -203,23 +204,26 @@ a:active { color: #000000; text-decoration: none}
     justify-content: center;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
-.container {
-  margin: 0;
+.content {
+  flex-direction: row wrap;
 }
 
-.content {
-  width: 35%;
-  flex-direction: row wrap;
+footer {
+  background-color: skyblue;
+  width: 100%;
 }
 
 footer .container2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+h1 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 }
