@@ -210,7 +210,8 @@ a:active { color: #000000; text-decoration: none}
 
 footer {
   background-color: skyblue;
-  width: 100%;
+  width: 95%;
+  padding-left: 5%;
 }
 
 footer .container2 {
