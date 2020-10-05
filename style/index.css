@@ -176,7 +176,6 @@ a:active { color: #000000; text-decoration: none}
   .container2 {
     justify-content: flex-end;
   }
-
 }
 
 /* 500px view */
@@ -222,5 +221,21 @@ h1 {
   align-items: center;
   font-size: 2rem;
 }
+
+}
+
+/* iphone 11 view */
+@media (max-width: 414px){
+
+
+footer {
+  background-color: dodgerblue;
+  justify-content: center;
+}
+
+footer .container2 .item2 {
+  margin: 2%;
+}
+
 
 }
